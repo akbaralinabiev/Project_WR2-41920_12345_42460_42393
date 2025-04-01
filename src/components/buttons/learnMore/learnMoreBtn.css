@@ -1,0 +1,33 @@
+.learn-more-btn a {
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Clash Display;
+    font-size: 18px;
+    font-family: "Aeonik-Regular";
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in;
+    border: 1px solid var(--Primary-Color, #3632ff);
+    -webkit-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in;
+    -ms-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.learn-more-btn a:hover {
+    color: #fff;
+    transform: scale(0.96);
+    background: var(--Primary-Color, #3632ff);
+    -webkit-transform: scale(0.96);
+    -moz-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    -o-transform: scale(0.96);
+}

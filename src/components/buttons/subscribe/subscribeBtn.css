@@ -1,0 +1,38 @@
+.subscribe-btn a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 30px;
+    align-items: center;
+    line-height: 24px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Aeonik-Regular";
+    border-radius: 10px;
+    background: var(--Primary-Color, #3632ff);
+    box-shadow: 0px 0px 6.2px 0px rgba(54, 50, 255, 0.3);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out,
+         transform 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.subscribe-btn a:hover {
+    background: #50507e;
+    color: #fff;
+    transform: scale(0.95);
+    box-shadow: 0px 0px 6.2px 0px rgba(10, 10, 46, 0.3);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+@media(max-width: 600px) {
+    .subscribe-btn a {
+         padding: 10px 30px;
+         font-size: 16px;
+    }
+}
