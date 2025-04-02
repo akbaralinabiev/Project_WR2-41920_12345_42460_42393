@@ -1,0 +1,21 @@
+.caseStudies-header,
+.caseStudies-header-nav {
+     padding: 0 12%;
+}
+
+.caseStudies-header h5 {
+     color: #fff;
+     font-family: "Aeonik-Regular";
+}
+
+.caseStudies-header {
+     margin-bottom: 30px;
+}
+
+@media(max-width: 1300px) {
+
+     .caseStudies-header-nav,
+     .caseStudies-header {
+          padding: 0 5%;
+     }
+}
