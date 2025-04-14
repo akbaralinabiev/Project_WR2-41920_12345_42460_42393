@@ -11,11 +11,9 @@ import { ContactUsComponents } from "../../components/export.js";
 import { Footer} from "../../components/export.js";
 
 // import Services from "../../components/services/Services.jsx";
-import Contact from "../../components/buttons/desktopButtons/contactUsButton/ContactUsButton.jsx";
-import OurServicesButton from "../../components/buttons/desktopButtons/ourServicesButton/OurServicesButton.jsx";
-import ContactUsWhitebg from "../../components/buttons/desktopButtons/ContactUsWhitebg/ContactUsWhitebg.jsx";
-import ContactLong from "../../components/buttons/mobileButtons/contactUsButtonLongVersion/contactUsButtonLong.jsx";
-import OurServicesButtonLong from "../../components/buttons/mobileButtons/ourServicesButtonLongVersion/ourServicesButtonLong.jsx";
+import Contact from "../../components/buttons/contactUsButton/ContactUsButton.jsx";
+import OurServicesButton from "../../components/buttons/ourServices/OurServicesBtn.jsx";
+import ContactUsWhitebg from "../../components/buttons/contactUsWB/ContactUsWB.jsx";
 
 // imported images
 import { default as Image } from "../../assets/images/headerImage.png";
