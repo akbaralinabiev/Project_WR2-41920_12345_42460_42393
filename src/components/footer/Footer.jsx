@@ -87,7 +87,7 @@ export const Footer = () => {
              </a>
            </div>
            <p>
-             © 2024 Appbuild agency. &nbsp; All rights reserved. Privacy Policy
+             © 2025 Appbuild agency. &nbsp; All rights reserved. Privacy Policy
            </p>
          </div>
        </div>
