@@ -1,0 +1,20 @@
+.services-header,
+.services-header-nav {
+     padding: 0 12%;
+}
+
+.services-header {
+     margin-bottom: 30px;
+}
+
+.services-container{
+     margin-bottom: 30px;
+}
+
+@media(max-width: 1300px) {
+
+     .services-header-nav,
+     .services-header {
+          padding: 0 5%;
+     }
+}
