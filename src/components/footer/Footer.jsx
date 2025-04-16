@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
-import {default as Subscribe} from "../buttons/desktopButtons/subscribe/Subscribe";
+import {default as Subscribe} from "../buttons/subscribe/SubscribeBtn";
 import {default as Logo} from "../../assets/images/logo-footer.svg";
 
 import {default as Facebook} from "../../assets/images//social-icons/facebook.svg";

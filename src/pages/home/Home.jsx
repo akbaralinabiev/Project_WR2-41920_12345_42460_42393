@@ -68,10 +68,6 @@ const Home = () => {
           </h4>
 
           {/* buttons */}
-          <div className="home-header_buttons-mobile">
-            <ContactLong />
-            <OurServicesButtonLong />
-          </div>
           <div className="home-header_buttons">
             <Contact />
             <OurServicesButton />

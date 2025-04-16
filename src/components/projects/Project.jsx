@@ -1,7 +1,7 @@
 import React from 'react';
 import './project.css';
 
-import {default as LearnMoreButton} from "../buttons/desktopButtons/learnMore/LearnMore"
+import {default as LearnMoreButton} from "../buttons/learnMore/LearnMoreBtn"
 
 export default function Project() {
      return (

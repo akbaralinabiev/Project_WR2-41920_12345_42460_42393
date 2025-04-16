@@ -2,8 +2,8 @@ import React from "react";
 import "./contactUs.css";
 
 
-import Contact from "../../components/buttons/desktopButtons/contactUsButton/ContactUsButton.jsx";
-import BrowsePackages from "../../components/buttons/desktopButtons/browsePackages/BrowsePackages.jsx";
+import Contact from "../../components/buttons/contactUsButton/ContactUsButton.jsx";
+import BrowsePackages from "../../components/buttons/browsePackages/BrowsePackagaes.jsx";
 import { default as Message } from "../../assets/images/service-images/Message.svg";
 import { default as Packages } from "../../assets/images/service-images/Packages.svg";
 

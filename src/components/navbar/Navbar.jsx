@@ -3,7 +3,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../../assets/images/logo.svg";
-import { default as Contact } from "../buttons/desktopButtons/contactUsButton/ContactUsButton.jsx";
+import { default as Contact } from "../buttons/contactUsButton/ContactUsButton";
 
 const Menu = ({ closeMenu }) => {
   return (
