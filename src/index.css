@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ClashDisplay-Regular';
+  background-color: var(--background-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--color-400);
+}
+
+
+
+/* custom fonts */
+
+@font-face {
+  font-family: 'Aeonik-Regular';
+  src: url('../src/assets/fonts/aeoniktrial-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('../src/assets/fonts/ClashDisplay-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../src/assets/fonts/ClashDisplay-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../src/assets/fonts/ClashDisplay-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../src/assets/fonts/ClashDisplay-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('../src/assets/fonts/ClashDisplay-Light.otf') format('opentype');
+}
+
+
+/* variables */
+
+:root {
+  /*colors*/
+  --primary-color: #3632FF;
+  --background-color: #F9F9FF;
+  --color-400: #010046;
+  --color-100: #37375A;
+  --dark-hover: #191919;
+  --line-height-p: 24px;
+
+  /*fonts*/
+  --font-family-bold: 'clash-display'ClashDisplay-Bold;
+  --font-family-semibold: 'clash-display'ClashDisplay-Semibold;
+  --font-family-medium: 'clash-display'ClashDisplay-Medium;
+  --font-family-regular: 'clash-display'ClashDisplay-Regular;
+  --font-family-light: 'clash-display'ClashDisplay-Light;
 }
