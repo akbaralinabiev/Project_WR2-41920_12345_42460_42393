@@ -1,0 +1,33 @@
+.featured-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.featured{
+    padding: 3% 12%;
+    /* background-color: var(--color-400); */
+}
+
+.featured-companies{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+h3{
+    color: #FFF;
+    font-family: "Aeonik-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: var(--primary-color);
+    padding: 6px 15px;
+    width: fit-content;
+    border-radius: 5px;
+}

@@ -10,6 +10,12 @@ const Menu = ({ closeMenu }) => {
     <div className="nav-links-mobile">
       <ul>
         <li>
+          <Link to="/ " onClick={closeMenu}>
+            Home
+          </Link>
+          <Link to="/culture" onClick={closeMenu}>
+            Culture
+          </Link>
           <Link to="/caseStudies" onClick={closeMenu}>
             Study Case
           </Link>
@@ -68,6 +74,12 @@ const Navbar = () => {
           <div className="nav-links">
             <ul>
               <li>
+                <Link to="/ " onClick={closeMenu}>
+                  Home
+                </Link>
+                <Link to="/culture" onClick={closeMenu}>
+                  Culture
+                </Link>
                 <Link to="/caseStudies" onClick={closeMenu}>
                   Study Case
                 </Link>

@@ -9,6 +9,7 @@ import { Testimonals } from "../../components/export.js";
 import { Divider } from "../../components/export.js";
 import { ContactUsComponents } from "../../components/export.js";
 import { Footer} from "../../components/export.js";
+import { Featured } from "../../components/export.js";
 
 // import Services from "../../components/services/Services.jsx";
 import Contact from "../../components/buttons/contactUsButton/ContactUsButton.jsx";
@@ -77,6 +78,12 @@ const Home = () => {
           <img src={Image} className="home-header_image" alt="" />
         </div>
       </div>
+
+    <section>
+      <div>
+        <Featured />
+      </div>
+    </section>
 
       {/* Here starts Services section -----------------------------------------------*/}
       <section className="home-services">

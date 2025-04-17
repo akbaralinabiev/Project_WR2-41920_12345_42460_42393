@@ -17,25 +17,25 @@ import { default as uiux_image } from "../../assets/images/service-images/uiux.s
 import { default as Backend } from "../../assets/images/service-images/backend.svg";
 
 const Services = () => {
-  const handleLeftButtonClick = () => {
-    const container = document.querySelector(".container");
-    const newPosition = container.scrollLeft - container.offsetWidth;
+  // const handleLeftButtonClick = () => {
+  //   const container = document.querySelector(".container");
+  //   const newPosition = container.scrollLeft - container.offsetWidth;
 
-    container.scrollTo({
-      left: newPosition,
-      behavior: "smooth", // Use smooth scrolling
-    });
-  };
+  //   container.scrollTo({
+  //     left: newPosition,
+  //     behavior: "smooth", // Use smooth scrolling
+  //   });
+  // };
 
-  const handleRightButtonClick = () => {
-    const container = document.querySelector(".container");
-    const newPosition = container.scrollLeft + container.offsetWidth;
+  // const handleRightButtonClick = () => {
+  //   const container = document.querySelector(".container");
+  //   const newPosition = container.scrollLeft + container.offsetWidth;
 
-    container.scrollTo({
-      left: newPosition,
-      behavior: "smooth", // Use smooth scrolling
-    });
-  };
+  //   container.scrollTo({
+  //     left: newPosition,
+  //     behavior: "smooth", // Use smooth scrolling
+  //   });
+  // };
 
   return (
     <div className="services">
@@ -43,57 +43,16 @@ const Services = () => {
         <Navbar />
       </div>
       <section className="home-services services-container">
-        <div className="home-services_box">
-          <div className="home-services_header">
+        <div className="home-services_box home-services_header">
             <h5>Our Services</h5>
             <h1>
               We specialize across various sectors, bringing expertise to the
               industry.
             </h1>
-          </div>
-          <div className="buttons">
-            <button className="left-button" onClick={handleLeftButtonClick}>
-              <svg
-                width="34"
-                height="10"
-                viewBox="0 0 34 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="previous-arrow"
-              >
-                <path
-                  d="M5 0.72461L1 4.71016M1 4.71016L5 8.72461M1 4.71016L33 4.71016"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Previous
-            </button>
-
-            <button className="right-button" onClick={handleRightButtonClick}>
-              Next
-              <svg
-                width="34"
-                height="10"
-                viewBox="0 0 34 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="next-arrow"
-              >
-                <path
-                  d="M29 8.72461L33 4.73906M33 4.73906L29 0.724609M33 4.73906L1 4.73905"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
 
-        <div className="container">
-          <div className="box">
+        <div className="container-2">
+          <div className="box-2">
             <img src={mobile_image} alt="" />
             <h5>Mobile App Development</h5>
             <p>
@@ -104,7 +63,7 @@ const Services = () => {
             </p>
             <ContactUsWhitebg />
           </div>
-          <div className="box">
+          <div className="box-2">
             <img src={frontend_image} alt="" />
             <h5>Frontend Development</h5>
             <p>
@@ -115,7 +74,7 @@ const Services = () => {
             </p>
             <ContactUsWhitebg />
           </div>
-          <div className="box">
+          <div className="box-2">
             <img src={Backend} alt="" />
             <h5>Backend Development</h5>
             <p>
@@ -126,7 +85,29 @@ const Services = () => {
             </p>
             <ContactUsWhitebg />
           </div>
-          <div className="box">
+          <div className="box-2">
+            <img src={uiux_image} alt="" />
+            <h5>UI/UX Design</h5>
+            <p>
+              We are firm believers in functional design and delightful user
+              experiences. With a team dedicated to web and mobile design, we
+              craft user-centric interfaces that captivate users and ensure a
+              smooth and engaging web experience.
+            </p>
+            <ContactUsWhitebg />
+          </div>
+          <div className="box-2">
+            <img src={uiux_image} alt="" />
+            <h5>UI/UX Design</h5>
+            <p>
+              We are firm believers in functional design and delightful user
+              experiences. With a team dedicated to web and mobile design, we
+              craft user-centric interfaces that captivate users and ensure a
+              smooth and engaging web experience.
+            </p>
+            <ContactUsWhitebg />
+          </div>
+          <div className="box-2">
             <img src={uiux_image} alt="" />
             <h5>UI/UX Design</h5>
             <p>

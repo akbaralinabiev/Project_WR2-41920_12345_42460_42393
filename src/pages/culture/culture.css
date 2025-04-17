@@ -1,0 +1,46 @@
+.culture-main{
+    padding: 0 12%;
+}
+
+.culture-container{
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-info-1{
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.container-info-2{
+    width: 100%;
+    text-align: right;
+    line-height: 30px;
+}
+
+.culture-info_image{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-info-1, .container-info-2 p{
+    font-size: 20px;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.span-2{
+    width: 100%;
+    text-align: end;
+}
