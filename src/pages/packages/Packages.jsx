@@ -77,6 +77,7 @@ export const Packages = () => {
                 <option value="1-month">1 Month</option>
                 <option value="3-month">3 Months</option>
                 <option value="6-month">6 Months</option>
+                <option value="12-month">12 Months</option>
               </select>
             </div>
 
@@ -143,6 +144,7 @@ export const Packages = () => {
                 <option value="1-month">1 Month</option>
                 <option value="3-month">3 Months</option>
                 <option value="6-month">6 Months</option>
+                <option value="12-month">12 Months</option>
               </select>
             </div>
 
@@ -210,6 +212,7 @@ export const Packages = () => {
                 <option value="1-month">1 Month</option>
                 <option value="3-month">3 Months</option>
                 <option value="6-month">6 Months</option>
+                <option value="12-month">12 Months</option>
               </select>
             </div>
 

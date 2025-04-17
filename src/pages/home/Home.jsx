@@ -75,7 +75,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-header_image-holder">
-          <img src={Image} className="home-header_image" alt="" />
+          <img src={Image} className="home-header_image bouncing" alt="" />
         </div>
       </div>
 
@@ -89,7 +89,7 @@ const Home = () => {
       <section className="home-services">
         <div className="home-services_box">
           <div className="home-services_header">
-            <h5>Our Services</h5>
+            <h5 className="bouncing">Our Services</h5>
             <h1>
               We specialize across various sectors, bringing expertise to the
               industry.
@@ -188,7 +188,7 @@ const Home = () => {
       <section>
         <div className="home-process">
           <div className="home-process_header">
-            <h5>Our Process</h5>
+            <h5 className="bouncing">Our Process</h5>
             <h1>
               We follow a straightforward yet robust and highly effective
               process.
@@ -250,7 +250,7 @@ const Home = () => {
         <div className="home-portfolio">
           <div className="home-portfolio_container">
             <div className="home-portfolio_header">
-              <h5>Case Studies</h5>
+              <h5 className="bouncing">Case Studies</h5>
               <h1>
                 Discover how we had helped world class companies in the past.
               </h1>

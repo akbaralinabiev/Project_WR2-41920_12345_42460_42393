@@ -30,7 +30,7 @@ export default function Testimonals() {
       <section className="testimonals-services">
         <div className="testimonals-services_box">
           <div className="testimonals-services_header">
-            <h5>Testimonals</h5>
+            <h5 className="bouncing">Testimonals</h5>
             <h1>Don’t take our word for it. See what our clients say.</h1>
           </div>
           <div className="testimonals-buttons">

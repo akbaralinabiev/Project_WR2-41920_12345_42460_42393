@@ -22,6 +22,7 @@ const CaseStudies = () => {
       </div>
       <Project />
       <Project />
+      <Project />
       <Divider />
       <ContactUsComponents />
       <Footer />

@@ -41,6 +41,7 @@ span{
 }
 
 .span-2{
+    display: flex;
     width: 100%;
-    text-align: end;
+    justify-content: flex-end;
 }

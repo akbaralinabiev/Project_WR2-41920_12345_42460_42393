@@ -44,7 +44,7 @@
     position: absolute;
     z-index: -1;
     top: 250px;
-    right: 8%;
+    right: 13%;
     width: auto;
     height: auto;
 }
@@ -891,3 +891,21 @@
          font-family: 'ClashDisplay-Semibold';
     }
 }
+
+.bouncing {
+     animation: bounce 1.5s ease-in-out infinite;
+   }
+ .logo{
+     display: flex;
+     align-items: center;
+ 
+ }
+ 
+   @keyframes bounce {
+     0%, 100% {
+       transform: translateY(0);
+     }
+     50% {
+       transform: translateY(-10px);
+     }
+   }

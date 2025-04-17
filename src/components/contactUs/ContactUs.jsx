@@ -14,7 +14,7 @@ export const ContactUs = () => {
        <div id="#contact" className="contact">
          <div className="contact-process">
            <div className="contact-process_header">
-             <h5>Let’s get in touch</h5>
+             <h5 className="bouncing">Let’s get in touch</h5>
              <h1>Ready to start working together with us ?</h1>
            </div>
 

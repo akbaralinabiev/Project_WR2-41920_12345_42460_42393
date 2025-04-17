@@ -6,7 +6,7 @@
 }
 
 .featured{
-    padding: 3% 12%;
+    padding: 3% 12% 5% 12%;
     /* background-color: var(--color-400); */
 }
 
@@ -17,9 +17,10 @@
   justify-content: center;
   align-items: center;
   max-width: 1000px;
+  margin-top: 30px;
 }
 
-h3{
+.featured-main h3{
     color: #FFF;
     font-family: "Aeonik-Regular";
     font-size: 20px;
@@ -30,4 +31,5 @@ h3{
     padding: 6px 15px;
     width: fit-content;
     border-radius: 5px;
+    margin-bottom: -10px;
 }

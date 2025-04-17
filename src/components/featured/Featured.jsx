@@ -7,6 +7,7 @@ import { default as Tinder } from "../../assets/images/companies/tinder.svg";
 import { default as Dropbox } from "../../assets/images/companies/dropbox.svg";
 import { default as Hubspot } from "../../assets/images/companies/hubspot.svg";
 import { default as Medium } from "../../assets/images/companies/medium.svg";
+import { Divider } from "../../components/export.js";
 
 export const Featured = () => {
 
@@ -14,6 +15,7 @@ export const Featured = () => {
         <div className="featured-main">
             <h3>Trusted by leading brands like</h3>
             <div className="featured">
+            <Divider />
                 <div className="featured-companies">
                     <a href="#0">
                         <img src={Shopify} alt="" />
