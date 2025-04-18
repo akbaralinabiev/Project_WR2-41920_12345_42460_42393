@@ -4,15 +4,18 @@ import "./culture.css";
 
 // imported Components
 import { default as Navbar } from "../../components/navbar/Navbar";
+import { Footer} from "../../components/export.js";
 
 //imported images
 import Sculp from "../../assets/images/culture-images/sculp.svg";
 import Logo from "../../assets/images/logo.svg";
 import Rectangle from "../../assets/images/culture-images/Rectangle.svg";
+import Balance from "../../assets/images/culture-images/balance.svg";
 const Culture = () => {
 
      return (
-          <div className="culture-main">
+         <div>
+           <div className="culture-main">
                <Navbar />
                <div className="culture-container">
                     <div className="container-info-1">
@@ -71,7 +74,57 @@ const Culture = () => {
                          <img src={Rectangle} alt="" />
                     </div>
                </div>
+               <div className="culture-container">
+                    <div className="culture-info_image">
+                              <img src={Balance} alt="" />
+                    </div>
+                    <div className="container-info-2">
+                         <div className="span-2">
+                              <h3>Maintaining the balance
+                              </h3>
+                         </div>
+                         <p>
+                         To meet the diverse needs of our clients and enable them to succeed in today's business world, we strategically assemble a team that takes advantage of international diversity. This includes bringing together people from different cultures, all with different work experiences and different perspectives on strategic and design challenges.
+
+                         <br /><br />While forming successful working groups is already a challenge in a local environment, it becomes even more complicated when team members come from different countries, have different functional backgrounds and work in different locations. It is not always enough to pursue a common goal. Therefore, we are actively committed to promoting mutual respect and continuous learning among team members. To compensate for the lack of face-to-face meetings, we integrate "intentional moments" into our virtual meetings. This includes regular check-ins, encouraging casual conversations and organizing brainstorming sessions where everyone has the opportunity to evaluate agenda items and contribute their ideas freely.
+                         </p>
+                    </div>
+               </div>
+               <div className="culture-container">
+                    <div className="container-info-1">
+                         <div>
+                              <h3>Our Core Values</h3>
+                         </div>
+                         <p>
+                         At the heart of our mission is the commitment to design for a better world, crafting experiences that bring benefits to individuals, businesses, and the environment alike.
+                         <br /><br />In our partnerships, we prioritize collaboration with people and businesses who uphold values of truthfulness and communicate with clarity and directness. Integrity is paramount, and we choose not to engage in collaborations with individuals or entities that compromise honesty, fail to recognize the true value of our work, or do not respect our established procedures. Our dedication to these principles underscores our pursuit of meaningful and impactful design.
+                         </p>
+                    </div>
+                    <div className="culture-info_image">
+                         <img src={Rectangle} alt="" />
+                    </div>
+               </div>
+               <div className="culture-container">
+                    <div className="culture-info_image">
+                              <img src={Balance} alt="" />
+                    </div>
+                    <div className="container-info-2">
+                         <div className="span-2">
+                              <h3>Championing the Ambitious Small
+                              </h3>
+                         </div>
+                         <p>
+                         We champion those who may be small in scale but harbor grand visions. While we firmly stand against free creative pitches—our rationale for this decision is multifaceted, and we're more than willing to discuss it—we understand the critical significance of making a lasting first impression in the business realm.
+                         <br /><br />Recognizing the challenges faced by startups, we empathize with the frustration of creating something remarkable but struggling to garner attention or, worse, genuine interest. In such instances, we extend a helping hand. We enthusiastically welcome your ideas and, if we genuinely believe in your company, we may opt for equity over monetary compensation.
+                         <br />Our commitment extends to assisting you in defining what sets your brand apart. Armed with this understanding, we embark on a comprehensive design journey—from conceptualizing your name to crafting your logo, website, and marketing materials. Additionally, we offer valuable insights on effectively fostering community engagement.
+                         Ultimately, aiding startups in realizing their potential is our forte!.
+                         </p>
+                    </div>
+               </div>
+
           </div>
+               <Footer />
+         </div>
      );
 }
 

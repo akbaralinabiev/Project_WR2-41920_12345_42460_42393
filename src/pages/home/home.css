@@ -893,7 +893,7 @@
 }
 
 .bouncing {
-     animation: bounce 1.5s ease-in-out infinite;
+     animation: bounce 2s ease-in-out infinite;
    }
  .logo{
      display: flex;
@@ -909,3 +909,9 @@
        transform: translateY(-10px);
      }
    }
+
+
+   
+   
+   
+   
