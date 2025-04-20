@@ -2,5 +2,47 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 0 5%;
+    padding: 0 12%;
+}
+
+.about-header_text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+}
+
+.about-header_text-holder {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.about-header_text-holder p {
+    font-family: 'Aeonik-Regular';
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.about-header_text-holder h1 {
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 50px;
+    margin: 0;
+}
+
+.about-header_text-holder h4{
+    font-family: 'Aeonik-Regular';
+    font-size: 20px;
+    color: var(--color-100);
+    font-weight: normal;
+    width: 70%;
+    margin: 15px 0;
+}
+
+.about-header_buttons {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
 }

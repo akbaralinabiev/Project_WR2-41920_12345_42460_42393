@@ -130,6 +130,13 @@ ol {
     font-weight: 300;
 }
 
+.footer-last-text a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+}
+
 @media(max-width: 1300px) {
     .footer {
          display: flex;
