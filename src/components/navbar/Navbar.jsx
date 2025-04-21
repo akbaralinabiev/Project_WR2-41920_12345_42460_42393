@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 import "./navbar.css";
 import Logo from "../../assets/images/logo.svg";
 import { default as Contact } from "../buttons/contactUsButton/ContactUsButton";
@@ -66,32 +68,90 @@ const Navbar = () => {
     <div className="wrapper">
       <div className="navbar">
         <div className="logo">
-          <Link to="/">
+          <Link className="link link--carme" to="/">
             <img src={Logo} alt="logo" />
+            <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
           </Link>
         </div>
         <div className="navbar-items">
           <div className="nav-links">
             <ul>
               <li>
-                <Link to="/ " onClick={closeMenu}>
+                <NavLink
+                  to="/"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   Home
-                </Link>
-                <Link to="/culture" onClick={closeMenu}>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
+
+                <NavLink
+                  to="/culture"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   Culture
-                </Link>
-                <Link to="/caseStudies" onClick={closeMenu}>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
+                <NavLink
+                  to="/caseStudies"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   Study Case
-                </Link>
-                <Link to="/services" onClick={closeMenu}>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
+                <NavLink
+                  to="/services"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   Services
-                </Link>
-                <Link to="/packages" onClick={closeMenu}>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
+                <NavLink
+                  to="/packages"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   Packages
-                </Link>
-                <Link to="/about" onClick={closeMenu}>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  onClick={closeMenu}
+                  className={({ isActive }) =>
+                    `link link--carme ${isActive ? "active" : ""}`
+                  }
+                >
                   About
-                </Link>
+                  <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                    <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                  </svg>
+                </NavLink>
               </li>
             </ul>
           </div>

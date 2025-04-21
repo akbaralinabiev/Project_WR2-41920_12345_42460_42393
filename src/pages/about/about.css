@@ -8,14 +8,20 @@
 .about-header_text {
     display: flex;
     flex-direction: row;
-    margin-top: 8%;
+    margin: 14% 0 5% 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
 }
 
 .about-header_text-holder {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-top: 100px;
+    width: 80%;
+}
+
+.about-header_text-holder img{
+    width: 30%;
 }
 
 .about-header_text-holder p {
@@ -36,8 +42,7 @@
     font-size: 20px;
     color: var(--color-100);
     font-weight: normal;
-    width: 70%;
-    margin: 15px 0;
+    margin: 30px 0;
 }
 
 .about-header_buttons {
@@ -45,4 +50,83 @@
     align-items: center;
     display: flex;
     gap: 30px;
+}
+
+.divider-about{
+    margin-top: 20px;
+}
+
+.divider-line-about {
+    flex: 1;
+    height: 1px;
+    background-color: #afadff;
+}
+
+.our-impact-h1 {
+    color: #3632FF;
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 50px;
+    margin: 30px 0;
+    width: 105px;
+    display: flex;
+}
+
+.home-process_container-box span{
+    color: black;
+}
+
+.about-section {
+    background-color: var(--color-400);
+    padding: 5% 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+
+.about-section-holder {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.aboutsectiont-holder img{
+    width: 30%;
+}
+
+.about-section-holder p {
+    color: var(--primary-color);
+    font-family: "Aeonik-Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: #fff;
+    padding: 6px 15px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.about-section-holder h1 {
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+.about-section-holder h4{
+    font-family: 'Aeonik-Regular';
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 23px 0 40px 0;
+}
+
+.about-section img{
+    margin: 70px 0 0 0 ;
+    border: 0.5px solid #fff;
+    border-radius: 35px;
 }
