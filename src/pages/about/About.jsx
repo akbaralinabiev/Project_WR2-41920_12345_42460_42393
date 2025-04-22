@@ -4,12 +4,21 @@ import "./about.css";
 // imported Components
 import { default as Navbar } from "../../components/navbar/Navbar"
 import { Footer } from "../../components/export.js";
+import { ContactUsComponents } from "../../components/export.js";
 import Contact from "../../components/buttons/contactUsButton/ContactUsButton.jsx";
 import OurServicesButton from "../../components/buttons/ourServices/OurServicesBtn.jsx";
 import Logo from "../../assets/images/logo.svg";
 import img5 from "../../assets/images/about-page/image 5.png";
 import img6 from "../../assets/images/about-page/image 6.png";
 import img7 from "../../assets/images/about-page/image 7.png";
+
+import image1 from "../../assets/images/about-imgs/img1.svg";
+import image2 from "../../assets/images/about-imgs/img2.svg";
+import image3 from "../../assets/images/about-imgs/img3.svg";
+import image4 from "../../assets/images/about-imgs/img4.svg";
+import image5 from "../../assets/images/about-imgs/img5.svg";
+import image6 from "../../assets/images/about-imgs/img6.svg";
+
 
 const About = () => {
 
@@ -117,6 +126,61 @@ const About = () => {
                          <img src={img7} alt="" />
                     </div>
                </div>
+
+               <section className="home-services services-container">
+                       <div className="home-services_box home-services_header">
+                           <h5 className="bouncing">Our Standarts</h5>
+                           <h1>
+                           We have core values over the type of work we produce.
+                           </h1>
+                       </div>
+               
+                       <div className="container-2">
+                         <div className="box-2">
+                           <img src={image1} alt="" />
+                           <h5>Task-oriented approach</h5>
+                           <p>
+                           Our service is designed to efficiently handle specific tasks or projects, offering the flexibility and precision your tech team needs.
+                           </p>
+                         </div>
+                         <div className="box-2">
+                           <img src={image2} alt="" />
+                           <h5>Seamless team integration</h5>
+                           <p>
+                           Our skilled web developers integrate effortlessly with your existing tech team, ensuring smooth collaboration and communication.
+                           </p>
+                         </div>
+                         <div className="box-2">
+                           <img src={image3} alt="" />
+                           <h5>Expertise in diverse technologies</h5>
+                           <p>
+                           We have a diverse pool of developers proficient in various web technologies, ready to tackle any challenge your project might present.
+                           </p>
+                         </div>
+                         <div className="box-2">
+                           <img src={image4} alt="" />
+                           <h5>Scalability and flexibility</h5>
+                           <p>
+                           Easily scale your development capacity up or down according to your project's timeline and complexity, without the overhead of full-time hires.
+                           </p>
+                         </div>
+                         <div className="box-2">
+                           <img src={image5} alt="" />
+                           <h5>Focused on your future goals</h5>
+                           <p>
+                           We align closely with your project objectives, ensuring that every task we undertake drives your project forward effectively.
+                           </p>
+                         </div>
+                         <div className="box-2">
+                           <img src={image6} alt="" />
+                           <h5>Reliable and timely delivery</h5>
+                           <p>
+                           We understand the importance of deadlines and always are committed to delivering high-quality work within your timeframes.
+                           </p>
+                         </div>
+                       </div>
+                     </section>
+                     <ContactUsComponents />
                < Footer />
           </div>
      );
