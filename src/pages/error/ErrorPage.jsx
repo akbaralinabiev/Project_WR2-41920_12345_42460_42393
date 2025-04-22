@@ -7,12 +7,12 @@ import "./error.css";
 import { default as Navbar } from "../../components/navbar/Navbar";
 import { Footer} from "../../components/export.js";
 
-const ErrorPage = () => {
+const ErrorPage = ({ openCart }) => {
 
      return (
           <div>
                <div className="error">
-               <Navbar />
+               <Navbar openCart={openCart} />
                <div className="error-header">
                     <span>404</span>
                     <h1>Page not found</h1>

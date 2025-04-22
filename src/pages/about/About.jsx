@@ -20,12 +20,12 @@ import image5 from "../../assets/images/about-imgs/img5.svg";
 import image6 from "../../assets/images/about-imgs/img6.svg";
 
 
-const About = () => {
+const About = ({ openCart }) => {
 
      return (
           <div className="about">
                <div className="about-header">
-                    <Navbar />
+                    <Navbar openCart={openCart} />
                     <div className="about-header_text">
                          <div className="about-header_text-holder">
                               <p>About us</p>

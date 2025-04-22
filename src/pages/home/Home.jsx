@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import "../../App.css";
 import { Link } from "react-router-dom";
 
 /*imported components */
@@ -27,9 +28,13 @@ import { default as frontend_image } from "../../assets/images/service-images/fr
 import { default as uiux_image } from "../../assets/images/service-images/uiux.svg";
 import { default as Backend } from "../../assets/images/service-images/backend.svg";
 
+import useFadeInOnScroll from "../../useFadeInOnScroll.js";
 
 
-const Home = () => {
+
+const Home = ({ openCart }) => {
+
+  const [ref, isVisible] = useFadeInOnScroll();
 
   const handleLeftButtonClick = () => {
     const container = document.querySelector(".container");
@@ -37,7 +42,7 @@ const Home = () => {
 
     container.scrollTo({
       left: newPosition,
-      behavior: "smooth", // Use smooth scrolling
+      behavior: "smooth",
     });
   };
 
@@ -47,7 +52,7 @@ const Home = () => {
 
     container.scrollTo({
       left: newPosition,
-      behavior: "smooth", // Use smooth scrolling
+      behavior: "smooth",
     });
   };
 
@@ -56,10 +61,12 @@ const Home = () => {
     <div className="home">
       {/* Here starts header section ------------------------------------------------*/}
       <div className="home-header">
-        <Navbar />
+      <Navbar openCart={openCart} />
 
         <div className="home-header_text-holder">
-          <p>We are a development agency</p>
+          <p>
+            We are a development agency
+            </p>
           <h1>
             Comprehensive Digital Solutions to Accelerate Your Performance
           </h1>
@@ -86,7 +93,7 @@ const Home = () => {
     </section>
 
       {/* Here starts Services section -----------------------------------------------*/}
-      <section className="home-services">
+      <section ref={ref} className={`home-services fade-in ${isVisible ? "visible" : ""}`}>
         <div className="home-services_box">
           <div className="home-services_header">
             <h5 className="bouncing">Our Services</h5>

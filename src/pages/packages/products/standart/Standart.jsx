@@ -1,7 +1,8 @@
 import React from 'react';
 import './standart.css';
 
-const Standart = () => {
+function Standart({ addToCart }) {
+
 
      return (
           <div>

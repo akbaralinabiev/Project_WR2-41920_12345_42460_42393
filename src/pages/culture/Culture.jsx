@@ -11,12 +11,12 @@ import Sculp from "../../assets/images/culture-images/sculp.svg";
 import Logo from "../../assets/images/logo.svg";
 import Rectangle from "../../assets/images/culture-images/Rectangle.svg";
 import Balance from "../../assets/images/culture-images/balance.svg";
-const Culture = () => {
+const Culture = ({ openCart }) => {
 
      return (
          <div>
            <div className="culture-main">
-               <Navbar />
+           <Navbar openCart={openCart} />
                <div className="culture-container">
                     <div className="container-info-1">
                          <p>Whether you're currently a valued client or considering joining our community, whether you're already a

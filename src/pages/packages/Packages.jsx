@@ -12,11 +12,11 @@ import { Divider } from "../../components/export.js";
 import { default as frontend_image } from "../../assets/images/service-images/frontend.svg";
 import { default as checkbox } from "../../assets/images/Vector.svg";
 
-export const Packages = () => {
+export const Packages = ({ openCart }) => {
   return (
     <div>
       <div className="packages">
-        <Navbar />
+        <Navbar openCart={openCart} />
         <div className="packages-header">
           <div className="packages-header-text">
             <h5>Pricing</h5>
@@ -30,6 +30,7 @@ export const Packages = () => {
         </div>
 
         <div className="package-container">
+          {/* Standard Package */}
           <div className="package-box">
             <img src={frontend_image} alt="" />
             <h5>Standart</h5>
@@ -69,7 +70,7 @@ export const Packages = () => {
               </ul>
             </div>
 
-            <div class="dropdown">
+            <div className="dropdown">
               <select>
                 <option selected disabled>
                   Select Subscription Duration
@@ -83,20 +84,14 @@ export const Packages = () => {
 
             {/* Button to attach package name on contact page when clicked */}
             <div className="contact-btn-long">
-              <Link
-                to={{
-                  pathname: "/contact",
-                  state: { package: "Standart package" },
-                }}
-              >
-                Select Standart
-              </Link>
+              <button onClick={openCart}>Select Standart</button>
             </div>
-
             <div className="our-services-btn-long">
               <Link to="/products/standart">Learn More</Link>
             </div>
           </div>
+
+          {/* Premium Package */}
           <div className="package-box">
             <img src={frontend_image} alt="" />
             <h5>Premium</h5>
@@ -136,7 +131,7 @@ export const Packages = () => {
               </ul>
             </div>
 
-            <div class="dropdown">
+            <div className="dropdown">
               <select>
                 <option selected disabled>
                   Select Subscription Duration
@@ -150,20 +145,16 @@ export const Packages = () => {
 
             {/* Button to attach package name on contact page when clicked */}
             <div className="contact-btn-long">
-              <Link
-                to={{
-                  pathname: "/contact",
-                  state: { package: "Premium package" },
-                }}
-              >
+            <button onClick={openCart}>
                 Select Premium
-              </Link>
+              </button>
             </div>
-
             <div className="our-services-btn-long">
               <Link to="/products/premium">Learn More</Link>
             </div>
           </div>
+
+          {/* Elite Package */}
           <div className="package-box">
             <img src={frontend_image} alt="" />
             <h5>Elite</h5>
@@ -204,7 +195,7 @@ export const Packages = () => {
               </ul>
             </div>
 
-            <div class="dropdown">
+            <div className="dropdown">
               <select>
                 <option selected disabled>
                   Select Subscription Duration
@@ -218,14 +209,9 @@ export const Packages = () => {
 
             {/* Button to attach package name on contact page when clicked */}
             <div className="contact-btn-long">
-              <Link
-                to={{
-                  pathname: "/contact",
-                  state: { package: "Elite Package" },
-                }}
-              >
+            <button onClick={openCart}>
                 Select Elite
-              </Link>
+              </button>
             </div>
 
             <div className="our-services-btn-long">

@@ -8,11 +8,11 @@ import { ContactUsComponents } from "../../components/export.js";
 import { Footer } from "../../components/export.js";
 import { Divider } from "../../components/export.js";
 
-const CaseStudies = () => {
+const CaseStudies = ({ openCart }) => {
   return (
     <div className="caseStudies">
       <div className="caseStudies-header-nav">
-        <Navbar />
+      <Navbar openCart={openCart} />
       </div>
       <div className="home-process_header caseStudies-header">
         <h5>Our Process</h5>

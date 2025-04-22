@@ -16,7 +16,7 @@ import { default as frontend_image } from "../../assets/images/service-images/fr
 import { default as uiux_image } from "../../assets/images/service-images/uiux.svg";
 import { default as Backend } from "../../assets/images/service-images/backend.svg";
 
-const Services = () => {
+const Services = ({ openCart }) => {
   // const handleLeftButtonClick = () => {
   //   const container = document.querySelector(".container");
   //   const newPosition = container.scrollLeft - container.offsetWidth;
@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <div className="services">
       <div className="services-header-nav">
-        <Navbar />
+      <Navbar openCart={openCart} />
       </div>
       <section className="home-services services-container">
         <div className="home-services_box home-services_header">
