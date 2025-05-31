@@ -449,7 +449,7 @@ textarea::placeholder {
 
 .faq-item {
     border: 1px solid var(--Light-Stroke, #E1E0FF);
-    border-radius: 10px;
+    border-radius: 18px;
     margin-bottom: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -466,7 +466,7 @@ textarea::placeholder {
 }
 
 .faq-question {
-    padding: 16px 20px;
+    padding: 20px 24px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -495,7 +495,7 @@ textarea::placeholder {
 }
 
 .faq-arrow {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .faq-item.open .faq-arrow {

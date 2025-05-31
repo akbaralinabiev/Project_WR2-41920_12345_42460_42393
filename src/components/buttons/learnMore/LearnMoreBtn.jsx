@@ -5,7 +5,7 @@ import './learnMoreBtn.css';
 export default function LearnMoreBtn() {
      return (
           <div className="learn-more-btn">
-               <Link to="/about">Learn More</Link>
+               <Link to="/notExistYet">Learn More</Link>
           </div>
      );
 }

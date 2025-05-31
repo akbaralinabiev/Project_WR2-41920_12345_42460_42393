@@ -11,6 +11,20 @@
     margin-top: 100px;
 }
 
+.floating-logo{
+     position: absolute;
+     top: 197%;
+     left: 20%;
+     z-index: 10;
+     rotate: -30deg;
+     transition: transform 0.3s ease-in-out;
+}
+
+.floating-logo img {
+    width: 200px;
+    height: auto;
+}
+
 .home-header_text-holder p {
     font-family: 'Aeonik-Regular';
     font-size: 18px;

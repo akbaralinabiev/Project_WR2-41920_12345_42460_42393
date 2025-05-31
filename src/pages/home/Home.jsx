@@ -19,6 +19,7 @@ import ContactUsWhitebg from "../../components/buttons/contactUsWB/ContactUsWB.j
 
 // imported images
 import { default as Image } from "../../assets/images/headerImage.png";
+import { default as Appbuild } from "../../assets/images/Vector-1.svg";
 import {default as Scoping} from "../../assets/images/service-images/scoping.svg";
 import {default as Roadmap} from "../../assets/images/service-images/roadmap.svg";
 import {default as Development} from "../../assets/images/service-images/development.svg";
@@ -62,6 +63,9 @@ const Home = ({ openCart }) => {
       {/* Here starts header section ------------------------------------------------*/}
       <div className="home-header">
       <Navbar openCart={openCart} />
+      <div className="floating-logo bouncing">
+        <img src={Appbuild} alt="" />
+      </div>
 
         <div className="home-header_text-holder">
           <p>
@@ -159,7 +163,7 @@ const Home = ({ openCart }) => {
             <img src={frontend_image} alt="" />
             <h5>Frontend Development</h5>
             <p>
-              Our talented developers leverage cutting-edge technologies like
+              Our talented developers and designers leverage cutting-edge technologies like
               React.js and Vue.js to craft bespoke front-end applications that
               are not only visually stunning but also scalable and easily
               maintainable.

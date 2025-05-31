@@ -88,23 +88,27 @@ const Contact = ({ openCart }) => {
   const faqs= [
     {
       question: "What services do you offer for web and mobile app design?",
-      answer: "We offer mobile app development, frontend engineering, and UI/UX design services tailored to your needs.",
+      answer: "- We provide comprehensive services, including UI/UX design, responsive web design, mobile app design, and interactive prototyping to ensure a seamless and visually appealing user experience.",
     },
     {
-      question: "How can I contact you?",
-      answer: "You can reach out via our contact form or email us directly at contact@example.com.",
+      question: "Do you offer help with urgent projects?",
+      answer: "- We understand the importance of meeting tight deadlines. Our team is well-equipped to handle urgent projects, ensuring a rapid and efficient turnaround without compromising on the quality of work. Contact us with your specific requirements, and we'll work together to meet your project's urgent needs.",
     },
     {
-      question: "What is your typical project timeline?",
-      answer: "Most projects take 4–8 weeks, depending on scope and complexity.",
+      question: "Can you integrate e-commerce features into our website or app?",
+      answer: "- Absolutely! We specialize in integrating secure and user-friendly e-commerce features into websites and mobile apps to enhance your online business presence.",
     },
     {
-      question: "What is your typical project timeline?",
-      answer: "Most projects take 4–8 weeks, depending on scope and complexity.",
+      question: "What technologies do you use for web and mobile app development?",
+      answer: "- We leverage cutting-edge technologies and frameworks, ensuring your projects are built with the latest tools to deliver high-performance, scalable, and innovative solutions.",
     },
     {
-      question: "What is your typical project timeline?",
-      answer: "Most projects take 4–8 weeks, depending on scope and complexity.",
+      question: "How do you approach user testing in the design process?",
+      answer: "- User testing is integral to our design process. We conduct usability tests, gather feedback, and iterate to refine the design, ensuring it aligns with user expectations and preferences.",
+    },
+    {
+      question: "What support and maintenance services do you offer post-launch?",
+      answer: "- Our commitment extends beyond the launch. We provide ongoing support, updates, and maintenance to ensure your website or app remains secure, up-to-date, and operates smoothly over time.",
     },
   ];
 
