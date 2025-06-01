@@ -78,8 +78,6 @@
     display: none;
 }
 
-/* here starts the responsive */
-
 @media (max-width: 1600px) {
     .home-header_image {
          width: 1100px;
@@ -345,14 +343,10 @@
     }
 }
 
-
-/* Here starts Our Services section */
-
 .home-services {
     display: flex;
     flex-direction: column;
     padding: 3% 12% 3% 12%;
-    /* background-color: antiquewhite; */
 }
 
 .home-services_box {
