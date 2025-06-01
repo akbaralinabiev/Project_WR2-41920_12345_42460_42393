@@ -33,7 +33,7 @@ const Contact = ({ openCart }) => {
     company: '',
     budget: '',
     services: [],
-    description: '',  // changed from message to description
+    description: '',
   });
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -106,13 +106,7 @@ const Contact = ({ openCart }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-      // console.log('Response status:', response.status);
-      // if (!response.ok) throw new Error(`Failed to send message, status: ${response.status}`);
-
-      // const result = await response.json();
-      // console.log('Message sent successfully:', result);
       if (response.ok) {
-        // Clear form
         setFormData({
           name: '',
           email: '',
