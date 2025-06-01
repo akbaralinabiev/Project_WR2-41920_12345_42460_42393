@@ -8,15 +8,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-console.log('Token:', process.env.TELEGRAM_BOT_TOKEN);
-
-// Create bot instance without polling (since we only send messages)
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN);
 app.post('/contact', async (req, res) => {
   const { name, email, company, budget, services, description } = req.body;
 
   const message = `
-*New Contact Form Submission*
+*New Form Submission*
 
 *Client Name:* ${name}
 *Email Address:* ${email}
@@ -30,7 +27,7 @@ ${services.map(s => `- ${s}`).join('\n')}
 ${description}
   `;
 
-  console.log('Sending message to Telegram:', message); // <-- Add this line
+  console.log('Sending message to Telegram:', message);
 
   try {
     await bot.sendMessage(process.env.TELEGRAM_CHAT_ID, message, { parse_mode: 'Markdown' });
