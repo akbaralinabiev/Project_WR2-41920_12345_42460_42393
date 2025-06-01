@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { useLocation } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
@@ -25,6 +25,7 @@ import uiux from '../../assets/images/contact/uiux.svg';
 const Contact = ({ openCart }) => {
   const location = useLocation();
   const selectedPackage = location.state?.package;
+  const [showSuccess, setShowSuccess] = React.useState(false);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -32,8 +33,9 @@ const Contact = ({ openCart }) => {
     company: '',
     budget: '',
     services: [],
-    message: '',
+    description: '',  // changed from message to description
   });
+
   const [openIndex, setOpenIndex] = useState(null);
 
 
@@ -52,40 +54,7 @@ const Contact = ({ openCart }) => {
     },
   ];
 
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleServiceToggle = (service) => {
-    setFormData((prev) => {
-      const alreadySelected = prev.services.includes(service);
-      return {
-        ...prev,
-        services: alreadySelected
-          ? prev.services.filter((s) => s !== service)
-          : [...prev.services, service],
-      };
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      const result = await res.json();
-      alert(result.message || 'Form submitted!');
-    } catch (error) {
-      alert('Error submitting form.');
-    }
-  };
-
-  const faqs= [
+  const faqs = [
     {
       question: "What services do you offer for web and mobile app design?",
       answer: "- We provide comprehensive services, including UI/UX design, responsive web design, mobile app design, and interactive prototyping to ensure a seamless and visually appealing user experience.",
@@ -111,6 +80,63 @@ const Contact = ({ openCart }) => {
       answer: "- Our commitment extends beyond the launch. We provide ongoing support, updates, and maintenance to ensure your website or app remains secure, up-to-date, and operates smoothly over time.",
     },
   ];
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleServiceToggle = (serviceLabel) => {
+    setFormData(prev => {
+      const services = prev.services.includes(serviceLabel)
+        ? prev.services.filter(s => s !== serviceLabel)
+        : [...prev.services, serviceLabel];
+      return { ...prev, services };
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:5000/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      // console.log('Response status:', response.status);
+      // if (!response.ok) throw new Error(`Failed to send message, status: ${response.status}`);
+
+      // const result = await response.json();
+      // console.log('Message sent successfully:', result);
+      if (response.ok) {
+        // Clear form
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          budget: '',
+          services: [],
+          description: ''
+        });
+
+        // Show success message or animation here
+        setShowSuccess(true);
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+    }
+  };
+
+  React.useEffect(() => {
+    if (showSuccess) {
+      const timer = setTimeout(() => setShowSuccess(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccess]);
+
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -151,6 +177,7 @@ const Contact = ({ openCart }) => {
           </div>
         </div>
         <form onSubmit={handleSubmit} className="contact-form">
+
           <div className="form-columns">
             <div className="form-column-1">
               <div className="form-group">
@@ -217,7 +244,7 @@ const Contact = ({ openCart }) => {
                   </div>
                   <div className="checkbox-wrapper-13">
                     <input
-                      id="c1-13"
+                      id={`service-${service.label.replace(/\s+/g, '-')}`}
                       type="checkbox"
                       checked={formData.services.includes(service.label)}
                       onChange={() => handleServiceToggle(service.label)}
@@ -235,14 +262,21 @@ const Contact = ({ openCart }) => {
             rows="4"
             value={formData.description}
             onChange={handleChange}
-          ></textarea>
+            ></textarea>
 
-          <button
+          <div className="contact-form-submit">
+            <button
             type="submit"
             className="submit"
-          >
+            >
             Submit
           </button>
+            {showSuccess && (
+              <div className="success-message">
+                Your message has been sent! 🎉
+              </div>
+            )}
+          </div>
         </form>
         <div className="social-media-container">
           <div className="home-process_header">

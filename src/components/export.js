@@ -6,4 +6,4 @@ export {default as Featured} from './featured/Featured.jsx'
 export {default as FAQ} from './faq/FAQ.jsx';
 export {default as Project} from './projects/Project.jsx';
 export {default as Testimonals} from './testimonals/Testimonals.jsx';
-export {default as Cart} from './cart/Cart.jsx'
+export {default as Cart} from './cart/Cart.jsx';

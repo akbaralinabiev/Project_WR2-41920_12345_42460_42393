@@ -9,7 +9,7 @@ import { Project } from "../../components/export.js";
 import { Testimonals } from "../../components/export.js";
 import { Divider } from "../../components/export.js";
 import { ContactUsComponents } from "../../components/export.js";
-import { Footer} from "../../components/export.js";
+import { Footer } from "../../components/export.js";
 import { Featured } from "../../components/export.js";
 
 // import Services from "../../components/services/Services.jsx";
@@ -20,10 +20,10 @@ import ContactUsWhitebg from "../../components/buttons/contactUsWB/ContactUsWB.j
 // imported images
 import { default as Image } from "../../assets/images/headerImage.png";
 import { default as Appbuild } from "../../assets/images/Vector-1.svg";
-import {default as Scoping} from "../../assets/images/service-images/scoping.svg";
-import {default as Roadmap} from "../../assets/images/service-images/roadmap.svg";
-import {default as Development} from "../../assets/images/service-images/development.svg";
-import {default as Launch} from "../../assets/images/service-images/launch.svg";
+import { default as Scoping } from "../../assets/images/service-images/scoping.svg";
+import { default as Roadmap } from "../../assets/images/service-images/roadmap.svg";
+import { default as Development } from "../../assets/images/service-images/development.svg";
+import { default as Launch } from "../../assets/images/service-images/launch.svg";
 import { default as mobile_image } from "../../assets/images/service-images/mobile.svg";
 import { default as frontend_image } from "../../assets/images/service-images/frontend.svg";
 import { default as uiux_image } from "../../assets/images/service-images/uiux.svg";
@@ -62,15 +62,14 @@ const Home = ({ openCart }) => {
     <div className="home">
       {/* Here starts header section ------------------------------------------------*/}
       <div className="home-header">
-      <Navbar openCart={openCart} />
-      <div className="floating-logo bouncing">
-        <img src={Appbuild} alt="" />
-      </div>
-
+        <Navbar openCart={openCart} />
+        <div className="floating-logo bouncing">
+          <img src={Appbuild} alt="" />
+        </div>
         <div className="home-header_text-holder">
           <p>
             We are a development agency
-            </p>
+          </p>
           <h1>
             Comprehensive Digital Solutions to Accelerate Your Performance
           </h1>
@@ -90,11 +89,11 @@ const Home = ({ openCart }) => {
         </div>
       </div>
 
-    <section>
-      <div>
-        <Featured />
-      </div>
-    </section>
+      <section>
+        <div>
+          <Featured />
+        </div>
+      </section>
 
       {/* Here starts Services section -----------------------------------------------*/}
       <section ref={ref} className={`home-services fade-in ${isVisible ? "visible" : ""}`}>

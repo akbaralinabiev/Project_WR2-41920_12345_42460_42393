@@ -145,6 +145,28 @@ label,
     margin-bottom: 10px;
 }
 
+.success-message {
+  animation: fadeinout 5s forwards;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.contact-form-submit{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
 .form-columns {
     display: flex;
     flex-direction: column;

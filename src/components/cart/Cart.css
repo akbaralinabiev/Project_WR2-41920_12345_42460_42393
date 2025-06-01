@@ -2,7 +2,7 @@
 .cart-drawer {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -200%;
     width: 450px;
     height: 100vh;
     background: white;

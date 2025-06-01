@@ -11,6 +11,13 @@
     margin-top: 100px;
 }
 
+.chatbot{
+ position: absolute;
+ z-index: 10;
+ bottom: 5%px;
+ right: 5%;
+}
+
 .floating-logo{
      position: absolute;
      top: 197%;
